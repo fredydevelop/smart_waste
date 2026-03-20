@@ -19,7 +19,7 @@ from tensorflow.keras.models import load_model, save_model
 
 
 with st.sidebar:
-    st.image("GreenSortAI_Logo.png, width="80")
+    st.image("GreenSortAI_Logo.png", width=80)
     st.title("GreenSortAI")
     selection=st.radio("select your option",options=["upload an image", "Insert Image url"])
 
