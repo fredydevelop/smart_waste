@@ -19,11 +19,12 @@ from tensorflow.keras.models import load_model, save_model
 
 
 with st.sidebar:
+    st.image("GreenSortAI_Logo.png, width="80")
     st.title("GreenSortAI")
     selection=st.radio("select your option",options=["upload an image", "Insert Image url"])
 
 
-def download_and_save_image(image_url, save_path="GreenSortAI_Logo.png"):
+def download_and_save_image(image_url, save_path="downloaded_image.png"):
     try:
         response = requests.get(image_url)
         response.raise_for_status()  # Raises HTTPError for bad responses (4xx or 5xx)
